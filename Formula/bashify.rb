@@ -1,4 +1,6 @@
 class Bashify < Formula
+  include Language::Python::Virtualenv
+
   desc "Natural language to zsh CLI powered by Claude"
   homepage "https://github.com/reed-colloton/bashify"
   url "https://github.com/reed-colloton/bashify/archive/refs/tags/v0.1.0.tar.gz"
