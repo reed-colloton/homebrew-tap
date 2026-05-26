@@ -43,8 +43,8 @@ class Bashify < Formula
   end
 
   test do
-    # Since it requires an API key and starts an interactive shell,
-    # we verify that the command executes and correctly reports the missing API key error.
-    assert_match "Error: OPENROUTER_API_KEY environment variable not set.", shell_output("#{bin}/bashify", 1)
+    # Since it starts an interactive setup when no key is configured,
+    # we verify that it launches and exits with an error on empty input.
+    assert_match "Welcome to Bashify!", pipe_output("#{bin}/bashify", "\n", 1)
   end
 end
