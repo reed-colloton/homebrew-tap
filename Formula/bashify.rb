@@ -1,12 +1,13 @@
 class Bashify < Formula
   include Language::Python::Virtualenv
 
-  desc "Natural language to zsh CLI powered by Claude"
+  desc "Natural language to zsh CLI for macOS powered by Claude"
   homepage "https://github.com/reed-colloton/bashify"
-  url "https://github.com/reed-colloton/bashify/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "2562a3b6880108020d1e41ed39e59ebda06afa63ab8c2bf79173bbd353549ead"
+  url "https://github.com/reed-colloton/bashify/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "0c58b62bf75d592bfed54b063f534edd12667ff21b637f4aa1713b6289bacf1b"
   license "MIT"
 
+  depends_on :macos
   depends_on "python@3.12"
 
   resource "certifi" do
