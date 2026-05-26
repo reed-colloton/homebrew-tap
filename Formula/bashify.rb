@@ -3,8 +3,8 @@ class Bashify < Formula
 
   desc "Natural language to zsh CLI for macOS powered by Claude"
   homepage "https://github.com/reed-colloton/bashify"
-  url "https://github.com/reed-colloton/bashify/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "0c58b62bf75d592bfed54b063f534edd12667ff21b637f4aa1713b6289bacf1b"
+  url "https://github.com/reed-colloton/bashify/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "113520d1f74e83fde45ab2c88597b0c6986d6e28cd14aa08c028382397fee167"
   license "MIT"
 
   depends_on :macos
