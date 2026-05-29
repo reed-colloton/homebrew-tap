@@ -8,7 +8,7 @@ class Bashify < Formula
   license "MIT"
 
   depends_on :macos
-  depends_on "python@3.12"
+  depends_on "python@3.13"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/b0/ee/9b19140fe824b367c04c5e1b369942dd754c4c5462d5674002f75c4dedc1/certifi-2024.8.30.tar.gz"
@@ -37,7 +37,7 @@ class Bashify < Formula
 
   def install
     # Create a virtualenv, install dependencies, and install the script
-    venv = virtualenv_create(libexec, "python3.12")
+    venv = virtualenv_create(libexec, "python3.13")
     venv.pip_install resources
     venv.pip_install_and_link buildpath
   end
